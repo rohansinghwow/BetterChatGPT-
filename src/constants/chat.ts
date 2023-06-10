@@ -32,6 +32,7 @@ export const modelMaxToken = {
   'gpt-3.5-turbo': 4096,
   'gpt-3.5-turbo-0301': 4096,
   'gpt-4': 8192,
+  'text-davinci-003': 4096,
   'gpt-4-0314': 8192,
   'gpt-4-32k': 32768,
   'gpt-4-32k-0314': 32768,
@@ -39,6 +40,10 @@ export const modelMaxToken = {
 
 export const modelCost = {
   'gpt-3.5-turbo': {
+    prompt: { price: 0.002, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'text-davinci-003': {
     prompt: { price: 0.002, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
   },
